@@ -1,0 +1,121 @@
+.kami {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #5d5d5d;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.kami_title h1 {
+    color: #333;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.kami_image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
+
+.kami_button {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.kami_button button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#button1 {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 0 #2c7a32;
+}
+
+#button2 {
+    background-color: #f44336;
+    color: white;
+    box-shadow: 0 4px 0 #dc1406;
+}
+
+.kami_button button:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #2c7a32;
+    color: white;
+}
+
+.kami_button button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+    z-index: -1;
+}
+
+.kami_button button:hover:after {
+    left: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+.pofang_image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
